@@ -49,6 +49,8 @@ p{
         font-size: 2.4rem;
     }
 }
+
+
 /*links*/
 a{
     text-decoration: none;
@@ -75,6 +77,7 @@ a{
     
 }
 
+
 /*badges*/
 .badge{
     font-size: 2rem;
@@ -99,5 +102,31 @@ a{
     }
     .badge--small{
         font-size: 1.2rem;
+    }
+}
+
+
+/*lists*/
+.list{
+    padding-left: 0;
+    list-style: none;
+    color: var(--heading-color);
+}
+.list--inline .list__item{
+    display: inline-block;
+    margin-right: 2rem;
+
+}
+.list--ticks{
+    list-style-image: url(../images/tick.svg);
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+}
+.list--ticks .list__item{
+    padding-left: 0.5rem;
+}
+@media screen and (min-width: 1024px){
+    .list--ticks .list__item{
+        padding-left: 0.3rem;
     }
 }
