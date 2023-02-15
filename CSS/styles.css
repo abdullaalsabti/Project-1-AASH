@@ -7,6 +7,7 @@
     --accent-color: #ff3400;
     --heading-color: #1b0760;
     --body-color: #918ca4;
+    --body-darker-color: #5c5577;
 }
 html{
     font-size: 62.5%; /*10 pixels*/
@@ -349,4 +350,45 @@ a{
 }
 .media__title{
     margin-top: 0;
+}
+
+
+
+
+/*quotes*/
+.quote{
+    font-size: 3rem;
+    color: var(--body-darker-color);
+    font-style: italic;
+}
+.quote::before{
+    content: open-quote;
+}
+.quote::after{
+    content: close-quote;
+}
+.credentials .media{
+margin-left: 2rem;
+}
+.credentials .media__title{
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 550;
+}
+.credentials .media__body{
+    margin-top: 0rem;
+    font-size: 2rem;
+    color: #cdcbd7;
+}
+@media screen and (min-width: 1024px){
+    .quote{
+        font-size: 2.4rem;
+    }
+    .credentials .media__title{
+        font-size: 2.4rem;
+    }
+    .credentials .media__body{
+        font-size: 1.6rem;
+    }
 }
