@@ -22,6 +22,7 @@ body{
     color: var(--body-color);
     font-size: 2.4rem;
     line-height: 1.5;
+    padding: 1rem; /*TODO: remove this*/
 }
 h1, h2, h3{
     color: var(--heading-color);
@@ -458,3 +459,39 @@ margin-left: 2rem;
         margin-left: 6rem;
     }
 }
+
+
+/*callout*/
+.callout{
+    border-radius: 5px;
+    padding: 4rem;
+}
+.callout__content{
+    text-align: center ;
+}
+.callout--primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+.callout__title{
+    color: #fff;
+    margin-top: 0;
+    font-size: 3rem;
+}
+.callout .button{
+    align-self: center;
+    justify-self: center;
+}
+@media screen and (min-width:768px){
+    .callout__content{
+        text-align: left;
+    }
+    .callout .grid--1x2{
+        grid-template-columns: 1fr auto;
+    }
+}
+
+
+
+
+/*collapsibles*/
