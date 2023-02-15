@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS/styles.css" />
     <link rel="stylesheet" href="/CSS/normalize.css" />
-    <link rel="stylesheet" href="/images/sprite.svg">
+    <link rel="stylesheet" href="/images/sprite.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,18 +16,25 @@
     <title>Sabtify</title>
   </head>
   <body>
-    <div class="input-group">
-      <span class="icon-container">
-        <svg class="icon icon--primary">
-            <use xlink:href="/images/sprite.svg#growth"></use>
-      </span>
-      <input
-        type="text"
-        class="input"
-        placeholder="Enter domain name here"
-        maxlength="100"
-      />
-      <button class="button button--accent">Search</button>
+    <div class="plan plan--popular">
+        <div class="card">
+          <header class="card__header card__secondary">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/Month</span>
+            <span class="badge badge--small badge--secondary">10% OFF</span>
+            <span class="plan__slogan">Easy start on the cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--ticks">
+                <li class="list__item ">Unlimited Websites</li>
+                <li class="list__item">Limited Bandwidth</li>
+                <li class="list__item">20 GB SSD Storage</li>
+                <li class="list__item">3 GB RAM</li>
+            </ul>
+            <button class="button button--outline btn--block"> Buy now </button>
+          </div>
+        </div>
     </div>
   </body>
 </html>
