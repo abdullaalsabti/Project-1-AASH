@@ -153,8 +153,15 @@ a{
     width: 40px;
     height: 40px;
 }
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
 .icon--primary{
     fill: var(--primary-color);
+}
+.icon--white{
+    fill: #fff;
 }
 .icon-container{
     background: #f3f9fa;
@@ -165,7 +172,6 @@ a{
     align-items: center;
     justify-content: center;
 }
-
 
 
 
@@ -265,8 +271,10 @@ a{
 /*cards*/
 .card{
     border-radius: 7px;
-    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+}
+.card--shadow{
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
 }
 .card__header{
     color: #fff;
@@ -407,5 +415,46 @@ margin-left: 2rem;
 @media screen and (min-width: 1024px){
     .grid--1x3{
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+/*testomonial*/
+.testimonial{
+    padding: 3rem 2rem;
+}
+.testimonial__image-container{
+    width: 100%;
+    position: relative;
+}
+.testimonial__image{
+    width: 100%;
+    max-height: 100%;
+
+}
+.testimonial__image-container > .icon-container{
+    position: absolute;
+    background: #ff3400;
+
+    top: 10%;
+    right: -32px;
+}
+.testimonial .credentials{
+    display: flex;
+}
+@media screen and (min-width: 768px){
+    .testimonial .quote{
+        font-size: 2rem;
+    }
+    .testimonial .media__title{
+        font-size: 1.8rem;
+    }
+    .testimonial .media__body{
+        font-size: 1.4rem;
+    }
+    .testimonial .quote{
+        margin-left: 6rem;
     }
 }
