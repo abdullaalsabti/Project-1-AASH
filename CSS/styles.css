@@ -149,3 +149,59 @@ a{
     align-items: center;
     justify-content: center;
 }
+
+
+/*buttons*/
+.button{
+    padding: 1.3rem 10rem;
+    border-radius: 40px;
+    outline: none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.button:hover{
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+}
+.button--dark{
+    background: var(--heading-color);
+    border: 2px solid var(--heading-color);
+    color: #fff;
+}
+.button--outline{
+    background: #fff;
+    border: 2px solid var(--heading-color);
+    color: #1b0760;
+}
+.button--outline:hover{
+    background: #1b0760;
+    color: #fff;
+}
+.button--light{
+    background: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    color: #fff;
+}
+.button--light:hover{
+    background: #00c8eb;
+}
+.button--accent{
+    background: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    color: #fff;
+}
+.button--accent:hover{
+    background: #fd4156;
+}
+.btn--block{
+    margin-top: 1rem;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+@media screen and (min-width: 1024px){
+    .button{
+        font-size: 1.5rem;
+    }
+}
