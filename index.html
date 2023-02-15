@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/CSS/styles.css" />
     <link rel="stylesheet" href="/CSS/normalize.css" />
+    <link rel="stylesheet" href="/images/sprite.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +16,18 @@
     <title>Sabtify</title>
   </head>
   <body>
-    <input type="text" class="input" placeholder="Enter domain name here">
+    <div class="input-group">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+            <use xlink:href="/images/sprite.svg#growth"></use>
+      </span>
+      <input
+        type="text"
+        class="input"
+        placeholder="Enter domain name here"
+        maxlength="100"
+      />
+      <button class="button button--accent">Search</button>
+    </div>
   </body>
 </html>

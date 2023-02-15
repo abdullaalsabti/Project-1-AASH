@@ -217,6 +217,19 @@ a{
     color: var(--heading-color);
     /*this changes color of input text*/
 }
+.input-group{
+    border: 2px solid #ccc;
+    border-radius: 35px;
+    display: flex;
+
+}
+.input-group .input{
+    border: none;
+    flex-grow: 1;
+}
+.input-group .button{
+    margin: 0.5rem 0.5rem;
+}
 ::placeholder{
     color: #cdcbd7;
 }
