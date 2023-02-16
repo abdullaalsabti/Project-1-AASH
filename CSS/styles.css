@@ -229,7 +229,12 @@ a{
 }
 .btn--stretched{
     width: auto;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2.5rem;
+}
+.button .icon{
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
 }
 @media screen and (min-width: 1024px){
     .button{
@@ -538,7 +543,6 @@ margin-left: 2rem;
 .block{
     --padding-vertical: 6rem;
     padding: var(--padding-vertical) 2rem;
-    border: 1px solid red;
 }
 .block--skewed{
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
@@ -644,3 +648,54 @@ margin-left: 2rem;
         padding-top: 0rem;
     }
 }
+
+
+
+/*domain block*/
+.block-domain .input-group{
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.15);
+}
+.block-domain__prices{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    justify-items: center;
+}
+@media screen and (min-width: 768px){
+    .block-domain__prices{
+        grid-template-columns: repeat(auto-fit , minmax(10rem, 1fr));
+        grid-template-rows: repeat(1, 6rem);
+
+    }
+}
+
+
+
+
+/*cards block*/
+.card{
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+}
+.cards-container .grid{
+    gap: 8rem 4rem;
+}
+.cards-container .card{
+    max-width: 450px;
+    margin: 0 auto;
+}
+.grid--1x3 .plan--popular{
+    transform: scale(1.1);
+}
+.grid--1x3 .plan{
+    transition: transform 0.5s ease-in-out;
+}
+.grid--1x3 .plan:hover{
+    transform: scale(1.05);
+}
+.grid--1x3 .plan--popular:hover{
+    transform: scale(1.15);
+}
+
+
+
+
